@@ -1,0 +1,41 @@
+:root {
+    --bg-color: #0a0a0a;
+    --primary: #e2d796;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.logo-cenas {
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid var(--primary);
+}
+
+.logo-cenas img {
+    display: block;
+}
+
+.logo {
+    width: 18rem;
+    margin: 2rem auto 0;
+}
+
+.cena-1 {
+    width: 15rem;
+}
+
+.cena-2 {
+    width: 15rem;
+}
