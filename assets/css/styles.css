@@ -1,41 +1,124 @@
 :root {
-    --bg-color: #0a0a0a;
-    --primary: #e2d796;
+  --primary: #8fcfa1;
+  --secondary: #59b674;
+  --black: #0a0a0a;
+  --white: #f0f0f0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Oswald, sans-serif;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--bg-color);
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--black);
 }
 
 .logo-cenas {
-    width: 30%;
-    height: 100%;
-    border-right: 1px solid var(--primary);
+  width: 28%;
+  height: 100%;
+  border-right: 3px solid var(--primary);
 }
 
 .logo-cenas img {
-    display: block;
+  display: block;
 }
 
 .logo {
-    width: 18rem;
-    margin: 2rem auto 0;
+  width: 18rem;
+  margin: 2rem auto 0;
 }
 
-.cena-1 {
-    width: 15rem;
+.cenas {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 85%;
 }
 
-.cena-2 {
-    width: 15rem;
+.cenas img {
+  width: 15rem;
+  border: 3px solid var(--primary);
+  padding: 3px;
+}
+
+.frase {
+  width: 19%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.frase p {
+  color: var(--primary);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.frase p span {
+  font-weight: 400;
+}
+
+.info {
+  background-image: linear-gradient(
+    to top right,
+    var(--primary),
+    var(--secondary)
+  );
+  width: 43%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info h1 {
+  text-transform: uppercase;
+}
+
+.info img {
+  width: 8rem;
+}
+
+.info-texto {
+  height: 40%;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info-texto p {
+  width: 45%;
+  line-height: 1.4rem;
+}
+
+nav {
+  width: 7%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav .menu-icon {
+    width: 40%;
+    cursor: pointer;
+}
+
+.menu-icon-1 {
+    background-image: url("assets/img/usina-menu.svg");
 }
